@@ -1,12 +1,11 @@
-<header class="flex">
-</header>
+<header class="flex"></header>
 <main>
   <h2>Press Button To Generate New Wallet</h2>
   <button (click)="generateWallet()">Generate</button>
   <div>
-    <p>Address: {{wallet!.address}}</p>
-    <p>Public Key: {{wallet!.public_key}}</p>
-    <p>Private Key: {{wallet!.private_key}}</p>
+    <p>Address: {{ wallet!.address }}</p>
+    <p>Public Key: {{ wallet!.public_key }}</p>
+    <p>Private Key: {{ wallet!.private_key }}</p>
   </div>
 </main>
 

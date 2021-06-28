@@ -4,7 +4,7 @@ class Bootstrap {
   static addGracefulShutdown(server: http.Server) {
     const startGracefulShutdown = (): void => {
       console.log('Stopping and finishing active requests.');
-      server.close(function() {
+      server.close(function () {
         console.log('All request have finished.');
       });
     };
@@ -15,4 +15,4 @@ class Bootstrap {
   }
 }
 
-export { Bootstrap }
+export { Bootstrap };

@@ -8,9 +8,8 @@ import { Bootstrap } from './utils/bootstrap';
 import * as Config from './utils/config';
 import Routes from './app/routes/routes';
 
-
 const app = express();
-app.use(cors())
+app.use(cors());
 Routes(app);
 
 const server: http.Server = app.listen(Config.port, () => {
