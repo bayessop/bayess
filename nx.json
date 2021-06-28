@@ -19,12 +19,21 @@
     }
   },
   "projects": {
+    "bayess-api": {
+      "tags": []
+    },
+    "bayess-common": {
+      "tags": []
+    },
     "bayess-ui": {
       "tags": []
     },
     "bayess-ui-e2e": {
       "tags": [],
       "implicitDependencies": ["bayess-ui"]
+    },
+    "bayess-wallet": {
+      "tags": []
     }
   },
   "workspaceLayout": {
