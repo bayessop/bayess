@@ -8,12 +8,16 @@
       "targets": {
         "build": {
           "executor": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/packages/bayess-api",
             "main": "packages/bayess-api/src/main.ts",
             "tsConfig": "packages/bayess-api/tsconfig.app.json",
-            "assets": ["packages/bayess-api/src/assets"]
+            "assets": [
+              "packages/bayess-api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -38,12 +42,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["packages/bayess-api/**/*.ts"]
+            "lintFilePatterns": [
+              "packages/bayess-api/**/*.ts"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/packages/bayess-api"],
+          "outputs": [
+            "coverage/packages/bayess-api"
+          ],
           "options": {
             "jestConfig": "packages/bayess-api/jest.config.js",
             "passWithNoTests": true
@@ -58,12 +66,16 @@
       "targets": {
         "build": {
           "executor": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/packages/bayess-common",
             "main": "packages/bayess-common/src/main.ts",
             "tsConfig": "packages/bayess-common/tsconfig.app.json",
-            "assets": ["packages/bayess-common/src/assets"]
+            "assets": [
+              "packages/bayess-common/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,12 +100,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["packages/bayess-common/**/*.ts"]
+            "lintFilePatterns": [
+              "packages/bayess-common/**/*.ts"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/packages/bayess-common"],
+          "outputs": [
+            "coverage/packages/bayess-common"
+          ],
           "options": {
             "jestConfig": "packages/bayess-common/jest.config.js",
             "passWithNoTests": true
@@ -109,7 +125,9 @@
       "targets": {
         "build": {
           "executor": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/packages/bayess-ui",
             "index": "packages/bayess-ui/src/index.html",
@@ -121,7 +139,9 @@
               "packages/bayess-ui/src/favicon.ico",
               "packages/bayess-ui/src/assets"
             ],
-            "styles": ["packages/bayess-ui/src/styles.scss"],
+            "styles": [
+              "packages/bayess-ui/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -186,7 +206,9 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/packages/bayess-ui"],
+          "outputs": [
+            "coverage/packages/bayess-ui"
+          ],
           "options": {
             "jestConfig": "packages/bayess-ui/jest.config.js",
             "passWithNoTests": true
@@ -215,7 +237,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["packages/bayess-ui-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "packages/bayess-ui-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -227,12 +251,16 @@
       "targets": {
         "build": {
           "executor": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/packages/bayess-wallet",
             "main": "packages/bayess-wallet/src/main.ts",
             "tsConfig": "packages/bayess-wallet/tsconfig.app.json",
-            "assets": ["packages/bayess-wallet/src/assets"]
+            "assets": [
+              "packages/bayess-wallet/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -257,12 +285,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["packages/bayess-wallet/**/*.ts"]
+            "lintFilePatterns": [
+              "packages/bayess-wallet/**/*.ts"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/packages/bayess-wallet"],
+          "outputs": [
+            "coverage/packages/bayess-wallet"
+          ],
           "options": {
             "jestConfig": "packages/bayess-wallet/jest.config.js",
             "passWithNoTests": true

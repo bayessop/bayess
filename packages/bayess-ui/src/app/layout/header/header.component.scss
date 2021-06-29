@@ -1,0 +1,11 @@
+@import "../../../sass/base/variables";
+
+.header {
+	background-color: $color__white;
+	border-bottom: 1px solid $color__neutral-3;
+	width: 100%;
+
+	&--hide-on-mobile {
+		display: none;
+	}
+}

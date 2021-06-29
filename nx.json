@@ -14,7 +14,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -30,7 +35,9 @@
     },
     "bayess-ui-e2e": {
       "tags": [],
-      "implicitDependencies": ["bayess-ui"]
+      "implicitDependencies": [
+        "bayess-ui"
+      ]
     },
     "bayess-wallet": {
       "tags": []
